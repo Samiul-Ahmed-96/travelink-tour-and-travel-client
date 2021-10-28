@@ -1,0 +1,28 @@
+.me-auto {
+  margin-left: auto;
+}
+.header {
+  background: #2c2c2c;
+  padding: 20px 0px;
+  font-family: "Titillium Web", sans-serif;
+}
+.me-auto.navbar-nav a:hover {
+  color: #ff7f47;
+}
+.navbar-nav a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 0px 10px;
+}
+.navbar-nav li {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.navbar-nav button {
+  background: #ff7f47;
+  border: none;
+  margin-left: 10px;
+  width: 130px;
+}

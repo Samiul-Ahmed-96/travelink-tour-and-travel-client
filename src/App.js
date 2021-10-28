@@ -6,6 +6,7 @@ import Login from './Login/Login';
 import Home from './Pages/Home/Home/Home';
 import NotFound from './Pages/NotFound/NotFound';
 import PakageDetail from './Pages/PakageDetail/PakageDetail';
+import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
        <NotFound></NotFound>
      </Route>
    </Switch>
+   <Footer></Footer>
   </BrowserRouter>
    </AuthProvider>
   );

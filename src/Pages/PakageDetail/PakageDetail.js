@@ -27,7 +27,7 @@ const PakageDetail = () => {
                     <p>{singlePakage.description}</p>
                     <h5><i class="far fa-star"></i> {singlePakage.rating}</h5>
                     <Link to={`/booking/${singlePakage._id}`}>
-                        <button>Booking</button>
+                        <button><i class="far fa-plus-square"></i> Booking</button>
                     </Link>
                     </div>
                 </Col>

@@ -2,9 +2,12 @@ import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import useAuth from '../../../Hooks/useAuth';
 import logo from '../../../Images/Travelink Logo.png';
 import './Header.css';
 const Header = () => {
+    //destructuring value
+    const {user,handleSignOut} = useAuth();
     return (
     <div>
     <Navbar sticky="top" className="header"  collapseOnSelect expand="lg" >
@@ -20,9 +23,10 @@ const Header = () => {
             <Link to="/addPakage">Add Pakage</Link>
         </Nav>
         <Nav>
-            <li>User</li>
-            <button>Sign out <i class="fas fa-sign-out-alt"></i></button>   
-            <Link className='ls-btn' to="/login">Login</Link>
+        <li>{user?.displayName}</li>
+        {user.email ? 
+        <button onClick={handleSignOut}>Sign out <i class="fas fa-sign-out-alt"></i></button>   
+        : <Link className='ls-btn' to="/login">Login</Link>}
         </Nav>
         </Navbar.Collapse>
         </Container>

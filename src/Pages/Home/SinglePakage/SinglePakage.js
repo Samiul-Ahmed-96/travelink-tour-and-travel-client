@@ -1,8 +1,10 @@
 import React from 'react';
 import { Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const SinglePakage = (props) => {
-    const{name,duration,price,rating,img} = props.pakage;
+    //Destructuring Values
+    const{_id,name,duration,price,rating,img} = props.pakage;
     return (
         <Col md={6} sm={6} xs={12}>
             <div className="single-pakage">
@@ -10,7 +12,10 @@ const SinglePakage = (props) => {
                 <h2>${price} <span>/Per Person</span> </h2>
                 <h4>{duration}</h4>
                 <h3>{name}</h3>
-                <h5>{rating}</h5>
+                <h5><i class="far fa-star"></i> {rating}</h5>
+                <Link to={`/pakageDetail/${_id}`}>
+                    <button>More Details</button>
+                </Link>
             </div>
         </Col>
     );

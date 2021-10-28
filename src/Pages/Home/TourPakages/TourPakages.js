@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
-import SinglePakage from '../Home/SinglePakage/SinglePakage';
+import SinglePakage from '../SinglePakage/SinglePakage';
 
 const TourPakages = () => {
-
+    //State
     const [pakages,setPakages] = useState([]);
-
+    //Data Load
     useEffect(()=>{
         fetch('http://localhost:5000/tourPakages')
         .then(res => res.json())
@@ -13,7 +13,7 @@ const TourPakages = () => {
     },[])
 
     return (
-        <Container>
+        <Container id='tourpakages'>
             <Row>
             {
                 pakages.map(pakage => <SinglePakage key={pakage._id} pakage={pakage}></SinglePakage>)

@@ -17,7 +17,7 @@ const Header = () => {
             <HashLink to="/home#tourpakages">Tour Pakages</HashLink>
             <HashLink to="/myOrders">My Orders</HashLink>
             <HashLink to="/manageAllOrder">Manage All Orders</HashLink>
-            <Link to="/addService">Add Service</Link>
+            <Link to="/addPakage">Add Pakage</Link>
         </Nav>
         <Nav>
             <li>User</li>

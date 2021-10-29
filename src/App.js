@@ -2,7 +2,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import AuthProvider from './Context/AuthProvider';
-import Login from './Login/Login';
+import Login from './Login/Login/Login';
+import PrivateRoute from './Login/PrivateRoute/PrivateRoute';
 import Home from './Pages/Home/Home/Home';
 import NotFound from './Pages/NotFound/NotFound';
 import PakageDetail from './Pages/PakageDetail/PakageDetail';
@@ -21,9 +22,9 @@ function App() {
      <Route path="/home">
          <Home/>
      </Route>
-     <Route path="/pakageDetail/:id">
+     <PrivateRoute path="/pakageDetail/:id">
          <PakageDetail></PakageDetail>
-     </Route>
+     </PrivateRoute>
      <Route path="/login">
          <Login></Login>
      </Route>

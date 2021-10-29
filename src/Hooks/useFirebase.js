@@ -14,18 +14,8 @@ const useFirebase = () => {
     const googleProvider = new GoogleAuthProvider();
 
     //handle google sign in
-    const signInUsingGoogle = (e) => {
-        setIsLoading(true);
-        signInWithPopup(auth, googleProvider)
-            .then(result => {
-                console.log(result.user);
-                setUser(result.user);
-                setError(" ");
-            })
-            .finally(()=>setIsLoading(false))
-            .catch(error => {  
-                setError(error);
-            })
+    const signInUsingGoogle = () => {
+       return signInWithPopup(auth, googleProvider)
     }
 
     //Sign Out handler
@@ -55,6 +45,9 @@ const useFirebase = () => {
         user,
         error,
         isLoading,
+        setUser,
+        setIsLoading,
+        setError,
         signInUsingGoogle,
         handleSignOut
     }

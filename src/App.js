@@ -6,7 +6,7 @@ import Login from './Login/Login/Login';
 import PrivateRoute from './Login/PrivateRoute/PrivateRoute';
 import Home from './Pages/Home/Home/Home';
 import NotFound from './Pages/NotFound/NotFound';
-import PakageDetail from './Pages/PakageDetail/PakageDetail';
+import PakageDetailAndBooking from './Pages/PakageDetailAndBooking/PakageDetailAndBooking';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 
@@ -23,7 +23,7 @@ function App() {
          <Home/>
      </Route>
      <PrivateRoute path="/pakageDetail/:id">
-         <PakageDetail></PakageDetail>
+         <PakageDetailAndBooking></PakageDetailAndBooking>
      </PrivateRoute>
      <Route path="/login">
          <Login></Login>

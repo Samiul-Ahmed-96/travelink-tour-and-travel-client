@@ -5,6 +5,8 @@ import AuthProvider from './Context/AuthProvider';
 import Login from './Login/Login/Login';
 import PrivateRoute from './Login/PrivateRoute/PrivateRoute';
 import Home from './Pages/Home/Home/Home';
+import ManageAllOrders from './Pages/ManageAllOrders/ManageAllOrders/ManageAllOrders';
+import MyOrders from './Pages/MyOrders/MyOrders';
 import NotFound from './Pages/NotFound/NotFound';
 import PakageDetailAndBooking from './Pages/PakageDetailAndBooking/PakageDetailAndBooking';
 import Footer from './Pages/Shared/Footer/Footer';
@@ -22,6 +24,12 @@ function App() {
      <Route path="/home">
          <Home/>
      </Route>
+     <PrivateRoute path="/myOrders">
+         <MyOrders></MyOrders>
+     </PrivateRoute>
+     <PrivateRoute path="/manageAllOrder">
+         <ManageAllOrders></ManageAllOrders>
+     </PrivateRoute>
      <PrivateRoute path="/pakageDetail/:id">
          <PakageDetailAndBooking></PakageDetailAndBooking>
      </PrivateRoute>

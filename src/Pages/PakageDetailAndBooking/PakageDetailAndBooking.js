@@ -32,6 +32,8 @@ const PakageDetail = () => {
         .then(res => res.json())
         .then(result => {
             console.log(result)
+            alert('Booking Successfully')
+            
         })
     };
     return (

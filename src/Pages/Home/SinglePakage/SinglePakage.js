@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import './SinglePakage.css';
 
 const SinglePakage = (props) => {
     //Destructuring Values
@@ -14,7 +15,7 @@ const SinglePakage = (props) => {
                 <h3>{name}</h3>
                 <h5><i class="far fa-star"></i> {rating}</h5>
                 <Link to={`/pakageDetail/${_id}`}>
-                    <button>More Details</button>
+                    <button> <i class="fas fa-plus-circle"></i> More Details</button>
                 </Link>
             </div>
         </Col>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import SinglePakage from '../SinglePakage/SinglePakage';
+import './TourPakages.css';
 
 const TourPakages = () => {
     //State

@@ -2,7 +2,8 @@ import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 import { useHistory, useLocation } from 'react-router';
 import useAuth from '../../Hooks/useAuth';
-
+import googleLogo from '../../Images/google.png';
+import './Login.css';
 
 const Login = () => {
     
@@ -32,7 +33,10 @@ const Login = () => {
     return (
         <Container>
             <Row>
-                <button onClick={handleSignIn}>login</button>
+                <div className="google-login">
+                    <img src={googleLogo} alt="" />
+                    <button onClick={handleSignIn}> <i class="fab fa-google"></i> login</button>
+                </div>
             </Row>
         </Container>
     );

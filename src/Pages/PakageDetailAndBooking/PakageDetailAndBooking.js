@@ -3,6 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router';
 import useAuth from '../../Hooks/useAuth';
+import './PakageDetailAndBooking.css';
 
 const PakageDetail = () => {
     const {user} = useAuth();
@@ -38,16 +39,19 @@ const PakageDetail = () => {
     };
     return (
         <Container>
-            <Row>
+            <Row className="booking-from">
                 <Col md={6} sm={12} xs={12}>
                     <form className="booking-form" onSubmit={handleSubmit(onSubmit)}>
                         <input defaultValue={user.displayName} {...register("name")} />
                         <input defaultValue={user.email} {...register("email", { required: true })} />
-                        <input defaultValue="" {...register("phone",{ required: true })} />
+                        
+                        <input defaultValue="pending" {...register("status",{ required: true })} />
                         <input defaultValue={singlePakage.name} {...register("pakageName" ,{ required: true })} />
                         <input defaultValue={singlePakage.price} {...register("pakagePrice" ,{ required: true })} />
                         <input defaultValue={singlePakage._id} {...register("pakageId" ,{ required: true })} />
-                        <input type="submit" value="Booking" />
+                        <input placeholder="Phone" defaultValue="" {...register("phone",{ required: true })} />
+                        <input placeholder="Address" defaultValue="" {...register("address",{ required: true })} />
+                        <input className="form-btn" type="submit" value="Booking" />
                     </form>
                 </Col>
                 <Col md={6} sm={12} xs={12}>

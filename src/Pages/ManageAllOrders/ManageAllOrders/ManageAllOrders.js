@@ -38,7 +38,7 @@ const ManageAllOrders = () => {
                     {
                         orders.map(order => <Col md={4} sm={12}>
                             <div className="order-item">
-                                <h2>{order.pakageName}</h2>
+                                <h3>{order.pakageName}</h3>
                                 <h1>Price : {order.pakagePrice}$</h1>
                                 <p>{order.address}</p>
                                 <h4>Status : {order.status}</h4>

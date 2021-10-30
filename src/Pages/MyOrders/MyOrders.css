@@ -4,6 +4,7 @@
   padding: 20px;
   margin: 30px;
   width: 75%;
+  transition: 0.3s;
 }
 .my-orders-container {
   font-family: "Titillium Web", sans-serif;
@@ -13,4 +14,14 @@
   padding: 0px 40px;
   margin: 30px 0px;
   font-weight: 600;
+}
+.my-orders h5 {
+  color: #ff7f47;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin: 10px 0px;
+}
+.my-orders:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 1) 0px 25px 20px -20px;
 }

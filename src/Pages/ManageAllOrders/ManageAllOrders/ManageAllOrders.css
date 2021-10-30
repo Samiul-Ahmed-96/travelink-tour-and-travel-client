@@ -3,8 +3,7 @@
 }
 .order-item {
   padding: 30px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 1) 0px 25px 20px -20px;
   background: rgb(255, 127, 71);
   background: radial-gradient(
     circle,
@@ -15,8 +14,11 @@
   color: #fff;
   text-align: center;
   margin: 20px;
+  transition: 0.3s;
 }
-
+.order-item:hover {
+  transform: scale(1.05);
+}
 .order-item button {
   display: block;
   width: 150px;

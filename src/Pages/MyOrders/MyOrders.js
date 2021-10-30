@@ -24,10 +24,11 @@ const MyOrders = () => {
                 {
                     result.map(order => <Col md={4}>
                         <div className="my-orders">
-                            <h5>Booked By : {order.name}</h5>
+                            <h5>Booked By</h5>
+                            <h3>{order.name}</h3>
                             <small>{order.email}</small>
                             <h5>Pakage Name</h5>
-                            <h4>{order.pakageName}</h4>
+                            <h3>{order.pakageName}</h3>
                             <p>Status : {order.status}</p>
                         </div>
                         </Col>)

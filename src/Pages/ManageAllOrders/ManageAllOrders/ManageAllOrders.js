@@ -8,14 +8,14 @@ const ManageAllOrders = () => {
      const [orders,setOrders] = useState([]);
      //Data Load
      useEffect(()=>{
-         fetch('http://localhost:5000/orders')
+         fetch('https://limitless-earth-18876.herokuapp.com/orders')
          .then(res => res.json())
          .then(data => setOrders(data))
      },[])
     
      //handle Delete
     const handleDelete = (id ) =>{
-        const url = `http://localhost:5000/orders/${id}`;
+        const url = `https://limitless-earth-18876.herokuapp.com/orders/${id}`;
         fetch(url,{
             method : 'DELETE'
         })

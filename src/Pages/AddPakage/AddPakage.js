@@ -8,7 +8,7 @@ const AddPakage = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
 
-        fetch('http://localhost:5000/tourPakages',{
+        fetch('https://limitless-earth-18876.herokuapp.com/tourPakages',{
 
             method : "POST",
             headers : {

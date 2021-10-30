@@ -8,7 +8,7 @@ const TourPakages = () => {
     const [pakages,setPakages] = useState([]);
     //Data Load
     useEffect(()=>{
-        fetch('http://localhost:5000/tourPakages')
+        fetch('https://limitless-earth-18876.herokuapp.com/tourPakages')
         .then(res => res.json())
         .then(data => setPakages(data))
     },[])

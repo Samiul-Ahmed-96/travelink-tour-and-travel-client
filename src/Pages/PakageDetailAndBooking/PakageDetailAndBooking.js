@@ -13,7 +13,7 @@ const PakageDetail = () => {
     const [singlePakage,setSinglePakage] = useState({})
     //Data load
     useEffect(()=>{
-        fetch(`http://localhost:5000/tourPakages/${id}`)
+        fetch(`https://limitless-earth-18876.herokuapp.com/tourPakages/${id}`)
         .then(res => res.json())
         .then(data => setSinglePakage(data))
     },[])
@@ -22,7 +22,7 @@ const PakageDetail = () => {
     const onSubmit = data => {
         console.log(data);
         
-        fetch('http://localhost:5000/orders',{
+        fetch('https://limitless-earth-18876.herokuapp.com/orders',{
 
             method : "POST",
             headers : {

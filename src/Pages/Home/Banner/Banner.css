@@ -41,7 +41,7 @@
 .banner-content button:hover {
   color: #ff7f47;
 }
-@media screen and (min-width: 300px) {
+@media screen and (min-device-width: 250px) and (max-device-width: 768px) {
   .banner-content h3 {
     font-size: 20px;
     color: #fff;

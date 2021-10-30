@@ -3,6 +3,7 @@
   padding: 30px;
   display: flex;
   align-items: center;
+  font-family: "Titillium Web", sans-serif;
 }
 
 form.booking-form {
@@ -15,7 +16,7 @@ form.booking-form input {
   width: 75%;
   margin: 12px auto;
   padding: 10px;
-  background: #ff7f47;
+  background: #fff;
   font-weight: 600;
   font-size: 20px;
   border: none;

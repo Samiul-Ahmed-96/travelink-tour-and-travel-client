@@ -4,6 +4,7 @@ import './App.css';
 import AuthProvider from './Context/AuthProvider';
 import Login from './Login/Login/Login';
 import PrivateRoute from './Login/PrivateRoute/PrivateRoute';
+import AddPakage from './Pages/AddPakage/AddPakage';
 import Home from './Pages/Home/Home/Home';
 import ManageAllOrders from './Pages/ManageAllOrders/ManageAllOrders/ManageAllOrders';
 import MyOrders from './Pages/MyOrders/MyOrders';
@@ -26,6 +27,9 @@ function App() {
      </Route>
      <PrivateRoute path="/myOrders">
          <MyOrders></MyOrders>
+     </PrivateRoute>
+     <PrivateRoute path="/addPakage">
+         <AddPakage></AddPakage>
      </PrivateRoute>
      <PrivateRoute path="/manageAllOrder">
          <ManageAllOrders></ManageAllOrders>

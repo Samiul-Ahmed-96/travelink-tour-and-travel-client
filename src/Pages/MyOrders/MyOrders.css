@@ -1,0 +1,16 @@
+.my-orders {
+  background: #2c2c2c;
+  color: #fff;
+  padding: 20px;
+  margin: 30px;
+  width: 75%;
+}
+.my-orders-container {
+  font-family: "Titillium Web", sans-serif;
+}
+
+.my-orders-container h2 {
+  padding: 0px 40px;
+  margin: 30px 0px;
+  font-weight: 600;
+}

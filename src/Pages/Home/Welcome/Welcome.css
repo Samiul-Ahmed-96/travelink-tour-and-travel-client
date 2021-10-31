@@ -1,0 +1,15 @@
+.d-flex.align-items-center.welcome-container.row {
+  background: #2c2c2c;
+  padding: 30px;
+  color: #fff;
+}
+.right-item button {
+  background: #fb7d47;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0px;
+  font-size: 20px;
+  font-weight: 700;
+  transition: 0.3s;
+  color: #2c2c2c;
+}

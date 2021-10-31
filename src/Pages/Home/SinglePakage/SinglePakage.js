@@ -15,7 +15,7 @@ const SinglePakage = (props) => {
                 <h3>{name}</h3>
                 <h5><i class="far fa-star"></i> {rating}</h5>
                 <Link to={`/pakageDetail/${_id}`}>
-                    <button> <i class="fas fa-plus-circle"></i> More Details</button>
+                    <button> <i class="fas fa-plus-circle"></i> Booking</button>
                 </Link>
             </div>
         </Col>

@@ -16,6 +16,7 @@ const TourPakages = () => {
     return (
         <Container id='tourpakages'>
             <Row>
+            <h2 className="section-heading">Tour Pakages</h2>
             {
                 pakages.map(pakage => <SinglePakage key={pakage._id} pakage={pakage}></SinglePakage>)
             }

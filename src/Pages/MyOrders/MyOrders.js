@@ -15,6 +15,22 @@ const MyOrders = () => {
             setMyOrders(data);
          })
      },[])
+       //handle Delete
+    const handleDelete = (id ) =>{
+        const url = `https://limitless-earth-18876.herokuapp.com/orders/${id}`;
+        fetch(url,{
+            method : 'DELETE'
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data)
+            if(data.deletedCount){
+                alert('Deleted');
+                const remaining = myOrders.filter(order => order._id !== id)
+                setMyOrders(remaining);
+            }
+        })
+    }
      const result = myOrders.filter(order => order.email === user.email);
      
     return (
@@ -30,6 +46,7 @@ const MyOrders = () => {
                             <h5>Pakage Name</h5>
                             <h3>{order.pakageName}</h3>
                             <p>Status : {order.status}</p>
+                            <button onClick={()=>handleDelete(order._id)}>Delete Order</button>
                         </div>
                         </Col>)
                 }

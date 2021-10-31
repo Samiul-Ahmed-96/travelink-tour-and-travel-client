@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "img": "https://i.ibb.co/Cn6Sw4B/cruise.png",
+    "des": "Cruise"
+  },
+  {
+    "id": "2",
+    "img": "https://i.ibb.co/Hhtrwsb/shark.png",
+    "des": "Wild Life"
+  },
+  {
+    "id": "3",
+    "img": "https://i.ibb.co/Y3vDVGQ/adventurer.png",
+    "des": "Adventure"
+  },
+  {
+    "id": "4",
+    "img": "https://i.ibb.co/m6Vw0Mt/plane.png",
+    "des": "Self-Guided"
+  }
+]

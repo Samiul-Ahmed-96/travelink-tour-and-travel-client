@@ -34,3 +34,11 @@
   border: none;
   margin: 10px auto;
 }
+@media screen and (min-device-width: 250px) and (max-device-width: 768px) {
+  .add-from input {
+    width: 100%;
+  }
+  .add-from textarea {
+    width: 100%;
+  }
+}

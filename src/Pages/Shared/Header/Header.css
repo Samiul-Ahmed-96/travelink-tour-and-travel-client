@@ -36,3 +36,12 @@
   width: 80px;
   text-align: center;
 }
+@media screen and (min-device-width: 250px) and (max-device-width: 768px) {
+  .navbar-nav .ls-btn {
+    margin-top: 15px;
+    padding: 5px 0px;
+  }
+  .navbar-nav button {
+    margin-top: 15px;
+  }
+}

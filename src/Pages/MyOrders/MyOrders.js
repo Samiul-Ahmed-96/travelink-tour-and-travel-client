@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row, Spinner } from 'react-bootstrap';
 import useAuth from '../../Hooks/useAuth';
 import './MyOrders.css';
 
@@ -17,8 +17,8 @@ const MyOrders = () => {
         },[])
         //handle Delete
         const handleDelete = (id ) =>{
-        const result = window.confirm("Want to delete?");
-        if (result) {
+        const deleteConfirm = window.confirm("Want to delete?");
+        if (deleteConfirm) {
             const url = `https://limitless-earth-18876.herokuapp.com/orders/${id}`;
             fetch(url,{
                 method : 'DELETE'
@@ -39,7 +39,10 @@ const MyOrders = () => {
      
     return (
         <Container>
-            <Row className='my-orders-container'>
+            {
+                result.length === 0 ? <Spinner className="text-center" animation="grow" variant="warning" /> : 
+
+                <Row className='my-orders-container'>
             <h2>Your Orders</h2>
                 {
                     result.map(order => <Col md={4}>
@@ -55,6 +58,7 @@ const MyOrders = () => {
                         </Col>)
                 }
             </Row>
+            }
         </Container>
     );
 };

@@ -6,6 +6,7 @@ import './AddPakage.css';
 const AddPakage = () => {
     
     const { register, handleSubmit } = useForm();
+    //Handle Submit
     const onSubmit = data => {
 
         fetch('https://limitless-earth-18876.herokuapp.com/tourPakages',{
@@ -31,7 +32,7 @@ const AddPakage = () => {
                         <img className="w-100" src="https://images.pexels.com/photos/4553618/pexels-photo-4553618.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
                     </Col>
                     <Col md={6} sm={12}>
-                    <h2>Add your own pakage</h2>
+                    <h2 className="my-3 fw-bold">Add your own pakage</h2>
                         <div className="add-from">
                         
                         <form onSubmit={handleSubmit(onSubmit)}>

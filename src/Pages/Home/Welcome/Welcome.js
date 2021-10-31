@@ -12,7 +12,7 @@ const Welcome = () => {
                     </div>
                 </Col>
                 <Col md={6} sm={12} xs={12}>
-                    <div className="right-item">
+                    <div className="right-item my-2">
                         <h1>A Simply Perfect Place To Get Lost</h1>
                         <p>When it comes to exploring exotic places, the choices are numerous. Whether you like peaceful destinations or vibrant landscapes, we have offers for you.Treat yourself with a journey to your inner self. Visit a mystique Tibet and start your spiritual adventure. We promise, you’ll enjoy every step you make.</p>
                         <button>See more</button>

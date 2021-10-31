@@ -7,6 +7,7 @@ import useAuth from '../../Hooks/useAuth';
 const PrivateRoute = ({ children, ...rest }) => {
     //destructuring value
     const {user,isLoading} = useAuth();
+    
     if(isLoading){
         return <Spinner className="text-center" animation="grow" variant="warning" />
     }

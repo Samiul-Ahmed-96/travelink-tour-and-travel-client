@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row, Spinner } from 'react-bootstrap';
 import './ManageAllOrders.css';
 
 const ManageAllOrders = () => {
@@ -38,7 +38,10 @@ const ManageAllOrders = () => {
         <div>
             <Container className="manage-all-orders">
                 <h2>All orders</h2>
-                <Row>
+                {
+                    orders.length === 0 ? <Spinner className="text-center" animation="grow" variant="warning" /> :
+
+                    <Row>
                     {
                         orders.map(order => <Col md={4} sm={12}>
                             <div className="order-item">
@@ -54,6 +57,7 @@ const ManageAllOrders = () => {
                         </Col>)
                     }
                 </Row>
+                }
             </Container>
         </div>
     );

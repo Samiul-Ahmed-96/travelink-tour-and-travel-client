@@ -15,19 +15,23 @@ const ManageAllOrders = () => {
     
      //handle Delete
     const handleDelete = (id ) =>{
-        const url = `https://limitless-earth-18876.herokuapp.com/orders/${id}`;
-        fetch(url,{
-            method : 'DELETE'
-        })
-        .then(res => res.json())
-        .then(data => {
-            console.log(data)
-            if(data.deletedCount){
-                alert('Deleted');
-                const remaining = orders.filter(order => order._id !== id)
-                setOrders(remaining);
-            }
-        })
+        const result = window.confirm("Want to delete?");
+        if (result){
+            const url = `https://limitless-earth-18876.herokuapp.com/orders/${id}`;
+            fetch(url,{
+                method : 'DELETE'
+            })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                if(data.deletedCount){
+                    alert('Deleted');
+                    const remaining = orders.filter(order => order._id !== id)
+                    setOrders(remaining);
+                }
+            })
+        }
+       
     }
 
     return (

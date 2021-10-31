@@ -4,32 +4,36 @@ import useAuth from '../../Hooks/useAuth';
 import './MyOrders.css';
 
 const MyOrders = () => {
-    const {user} = useAuth()
-     //State
-     const [myOrders,setMyOrders] = useState([]);
-     //Data Load
-     useEffect(()=>{
-         fetch('https://limitless-earth-18876.herokuapp.com/orders')
-         .then(res => res.json())
-         .then(data => {
-            setMyOrders(data);
-         })
-     },[])
-       //handle Delete
-    const handleDelete = (id ) =>{
-        const url = `https://limitless-earth-18876.herokuapp.com/orders/${id}`;
-        fetch(url,{
-            method : 'DELETE'
-        })
-        .then(res => res.json())
-        .then(data => {
-            console.log(data)
-            if(data.deletedCount){
-                alert('Deleted');
-                const remaining = myOrders.filter(order => order._id !== id)
-                setMyOrders(remaining);
-            }
-        })
+        const {user} = useAuth()
+        //State
+        const [myOrders,setMyOrders] = useState([]);
+        //Data Load
+        useEffect(()=>{
+            fetch('https://limitless-earth-18876.herokuapp.com/orders')
+            .then(res => res.json())
+            .then(data => {
+                setMyOrders(data);
+            })
+        },[])
+        //handle Delete
+        const handleDelete = (id ) =>{
+        const result = window.confirm("Want to delete?");
+        if (result) {
+            const url = `https://limitless-earth-18876.herokuapp.com/orders/${id}`;
+            fetch(url,{
+                method : 'DELETE'
+            })
+            .then(res => res.json())
+            .then(data => {
+    
+                if(data.deletedCount){
+                    alert('Deleted');
+                    const remaining = myOrders.filter(order => order._id !== id)
+                    setMyOrders(remaining);
+                }
+            })
+        }
+        
     }
      const result = myOrders.filter(order => order.email === user.email);
      

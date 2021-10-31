@@ -11,12 +11,12 @@
 }
 .navbar-nav a {
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   text-decoration: none;
   margin: 0px 10px;
 }
 .navbar-nav li {
-  color: #fff;
+  color: #ff7f47;
   font-size: 20px;
   margin-left: 10px;
 }
@@ -25,4 +25,14 @@
   border: none;
   margin-left: 10px;
   width: 130px;
+  font-weight: 600;
+}
+.ls-btn {
+  background: rgb(35, 109, 247);
+  padding: 10px;
+  color: #2c2c2c;
+  font-weight: 600;
+  letter-spacing: 2px;
+  width: 80px;
+  text-align: center;
 }

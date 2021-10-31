@@ -12,7 +12,7 @@ const [tours,setTours] = useState([]);
     },[])
     
     return (
-        <Container className='choose-items-container'>
+        <Container id="chooseTour" className='choose-items-container'>
         <Row>
         <h2 className="section-heading">Choose Tour</h2>
             {

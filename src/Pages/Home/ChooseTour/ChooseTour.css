@@ -9,12 +9,10 @@
   margin: 30px;
   box-shadow: rgb(0 0 0 / 25%) 0px 30px 60px -12px inset,
     rgb(0 0 0) 0px 18px 36px -18px inset;
-  font-family: "Titillium Web", sans-serif;
 }
 .section-heading {
   text-align: center;
   font-size: 60px;
   margin: 30px 0px;
-  font-family: "Titillium Web", sans-serif;
   font-weight: 600;
 }

@@ -1,51 +1,50 @@
-.banner {
-  background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(80, 81, 156, 0.9)),
-      to(rgba(80, 81, 156, 0.9))
-    ),
-    url(img/hero-bg.jpg);
-  background: linear-gradient(rgba(233, 134, 21, 0.9), rgba(82, 81, 81, 0.9)),
-    url("https://i.ibb.co/DgrMpmm/banner.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Titillium Web", sans-serif;
-  margin-bottom: 60px;
+img.bannerImg {
+  width: 100%;
+}
+
+ul.slick-dots {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  display: inline-block;
+}
+.slider-main {
+  position: relative;
 }
 .banner-content {
-  width: 75%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 555;
+  background: #2d373cda;
+  border-radius: 5px;
+  color: #fff;
+  padding: 120px 100px;
   text-align: center;
-  color: #2c2c2c;
-  margin: 80px 0px;
+}
+.banner-content a button {
+  margin: 0px 10px;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  padding: 10px 20px;
+  transition: 0.3s;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.banner-content h4 {
+  margin: 20px 0px;
 }
 .banner-content h1 {
-  font-size: 110px;
-  font-weight: 600;
+  font-size: 60px;
 }
-.banner-content h3 {
-  font-size: 50px;
-  color: #fff;
-  font-weight: 600;
-}
-.banner-content button {
-  background: #2c2c2c;
-  color: #fff;
-  padding: 15px 20px;
-  border: none;
-  margin: 50px 0px;
-  font-size: 20px;
-  font-weight: 600;
-  transition: 0.3s;
-}
+
 .banner-content button:hover {
   color: #ff7f47;
+  border: 2px solid #ff7f47;
 }
 @media screen and (min-device-width: 250px) and (max-device-width: 768px) {
   .banner-content h3 {

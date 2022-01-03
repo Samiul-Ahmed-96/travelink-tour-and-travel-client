@@ -2,18 +2,19 @@
   margin-left: auto;
 }
 .header {
-  background: #2c2c2c;
-  padding: 20px 0px;
-  font-family: "Titillium Web", sans-serif;
+  background: #2d373c;
+  padding: 5px 0px;
+  overflow: hidden;
 }
 .me-auto.navbar-nav a:hover {
   color: #ff7f47;
 }
 .navbar-nav a {
-  color: #fff;
+  color: #ffffff;
   font-size: 18px;
   text-decoration: none;
   margin: 0px 10px;
+  font-weight: 500;
 }
 .navbar-nav li {
   color: #ff7f47;
@@ -28,13 +29,10 @@
   font-weight: 600;
 }
 .ls-btn {
-  background: rgb(35, 109, 247);
-  padding: 10px;
-  color: #2c2c2c;
-  font-weight: 600;
-  letter-spacing: 2px;
-  width: 80px;
+  padding: 5px 15px;
   text-align: center;
+  border: 2px solid #ff7f47;
+  border-radius: 5px;
 }
 @media screen and (min-device-width: 250px) and (max-device-width: 768px) {
   .navbar-nav .ls-btn {
@@ -44,4 +42,7 @@
   .navbar-nav button {
     margin-top: 15px;
   }
+}
+.navbar-brand img {
+  width: 150px;
 }

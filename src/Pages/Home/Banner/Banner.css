@@ -17,15 +17,14 @@ ul.slick-dots {
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 555;
-  background: #2d373cda;
-  border-radius: 5px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='800' preserveAspectRatio='none' viewBox='0 0 1920 800'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1150%26quot%3b)' fill='none'%3e%3crect width='1920' height='800' x='0' y='0' fill='rgba(45%2c 55%2c 60%2c 0.8549019607843137)'%3e%3c/rect%3e%3cpath d='M -1867.9582115488636%2c613 C -1675.96%2c518.6 -1291.96%2c142 -907.9582115488636%2c141 C -523.96%2c140 -331.96%2c607.4 52.041788451136426%2c608 C 436.04%2c608.6 638.45%2c176.8 1012.0417884511364%2c144 C 1385.63%2c111.2 1738.41%2c384 1920%2c444' stroke='rgba(255%2c 127%2c 71%2c 0.4)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -1853.087817341879%2c639 C -1661.09%2c557 -1277.09%2c229 -893.0878173418789%2c229 C -509.09%2c229 -317.09%2c630.4 66.91218265812108%2c639 C 450.91%2c647.6 656.29%2c301.6 1026.912182658121%2c272 C 1397.53%2c242.4 1741.38%2c447.2 1920%2c491' stroke='rgba(255%2c 127%2c 71%2c 0.4)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1150'%3e%3crect width='1920' height='800' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
   color: #fff;
   padding: 120px 100px;
-  text-align: center;
+  height: 100%;
+  width: 85%;
 }
 .banner-content a button {
   margin: 0px 10px;
-  border-radius: 5px;
   border: 2px solid #fff;
   background: transparent;
   color: #fff;
@@ -36,23 +35,39 @@ ul.slick-dots {
 }
 
 .banner-content h4 {
-  margin: 20px 0px;
+  margin: 35px 0px;
+  width: 800px;
+  font-size: 22px;
+  line-height: 1.5;
 }
 .banner-content h1 {
-  font-size: 60px;
+  font-size: 80px;
+  color: #ff7f47;
+  font-weight: 600;
 }
-
 .banner-content button:hover {
   color: #ff7f47;
   border: 2px solid #ff7f47;
 }
 @media screen and (min-device-width: 250px) and (max-device-width: 768px) {
-  .banner-content h3 {
-    font-size: 20px;
-    color: #fff;
-    font-weight: 600;
+  .banner-content h4 {
+    display: none;
   }
   .banner-content h1 {
-    font-size: 40px;
+    font-size: 18px;
+  }
+  .banner-content {
+    padding: 10px;
+  }
+  .banner-content a button {
+    border-radius: 5px;
+    border: 2px solid #ff7f47;
+    background: transparent;
+    color: #fff;
+    padding: 5px 15px;
+    transition: 0.3s;
+    font-weight: 600;
+    font-size: 10px;
+    margin: 5px 0px;
   }
 }

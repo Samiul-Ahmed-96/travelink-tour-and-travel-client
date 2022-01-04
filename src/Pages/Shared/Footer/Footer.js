@@ -62,7 +62,7 @@ const Footer = () => {
                 <Col md={3} sm={6} xs={12}>
                     <div className="we-accept">
                         <h3>We Accept</h3>
-                        <img src="https://i.ibb.co/PCkYDgv/ssl-commerce-1d268dce.png" alt="" />
+                        <img className='w-100' src="https://i.ibb.co/PCkYDgv/ssl-commerce-1d268dce.png" alt="" />
                     </div>
                 </Col>
             </Row>

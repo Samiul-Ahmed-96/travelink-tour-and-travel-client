@@ -1,11 +1,22 @@
 .desti-item {
   position: relative;
+  padding: 5px;
+  border-radius: 10px;
+  overflow: hidden;
 }
-
+.desti-item img {
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.desti-item img:hover {
+  transform: scale(0.95);
+}
 .desti-content {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background: #2d373c99;
+  background: #2d373ccf;
+  color: #fff;
+  padding: 20px;
 }

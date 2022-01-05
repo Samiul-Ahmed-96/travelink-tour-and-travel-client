@@ -1,10 +1,9 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import "./Welcome.css";
 
 const Welcome = () => {
   return (
-    <Container className="p-4">
       <Row className="d-flex align-items-center welcome-container">
         <Col md={6} sm={12} xs={12}>
           <div className="left-item">
@@ -29,7 +28,6 @@ const Welcome = () => {
           </div>
         </Col>
       </Row>
-    </Container>
   );
 };
 

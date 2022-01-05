@@ -1,0 +1,59 @@
+[
+  {
+    "id": "1",
+    "img": "https://i.ibb.co/Pwk0V8k/exploredestination-8.jpg",
+    "place": "Augsburg",
+    "hotel": "19",
+    "space": "23"
+  },
+  {
+    "id": "2",
+    "img": "https://i.ibb.co/DLQZsKT/exploredestination-9.jpg",
+    "place": "Bugsburg",
+    "hotel": "13",
+    "space": "27"
+  },
+
+  {
+    "id": "3",
+    "img": "https://i.ibb.co/WxcmCw7/exploredestination-1.jpg",
+    "place": "Humberg",
+    "hotel": "22",
+    "space": "32"
+  },
+  {
+    "id": "4",
+    "img": "https://i.ibb.co/jRDX4kd/exploredestination-2.jpg",
+    "place": "Nuremberg",
+    "hotel": "19",
+    "space": "25"
+  },
+  {
+    "id": "5",
+    "img": "https://i.ibb.co/CwF3sS6/exploredestination-3.jpg",
+    "place": "Deremberg",
+    "hotel": "16",
+    "space": "29"
+  },
+  {
+    "id": "6",
+    "img": "https://i.ibb.co/d4d7Z3r/exploredestination-4.jpg",
+    "place": "Fermberg",
+    "hotel": "15",
+    "space": "21"
+  },
+  {
+    "id": "7",
+    "img": "https://i.ibb.co/NY8ctfJ/exploredestination-5.jpg",
+    "place": "Sermberg",
+    "hotel": "18",
+    "space": "28"
+  },
+  {
+    "id": "8",
+    "img": "https://i.ibb.co/h1LW3N8/exploredestination-6.jpg",
+    "place": "Mermberg",
+    "hotel": "16",
+    "space": "23"
+  }
+]

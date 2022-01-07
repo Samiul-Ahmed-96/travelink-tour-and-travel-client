@@ -49,7 +49,7 @@ const useFirebase = () => {
         //Save User
         const savedUser = (email,name,method) =>{
             const user = {email : email , displayName : name}
-            fetch('https://limitless-earth-18876.herokuapp.com/users',{
+            fetch('http://localhost:5000/users',{
                 method : method,
                 headers : {
                     'content-type' : 'application/json'
@@ -61,7 +61,7 @@ const useFirebase = () => {
         
     //Check Admin
     useEffect(()=>{
-        fetch(`https://limitless-earth-18876.herokuapp.com/users/${user.email}`)
+        fetch(`http://localhost:5000/users/${user.email}`)
         .then(res => res.json())
         .then(data => setAdmin(data.admin))
     },[user.email])

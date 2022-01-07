@@ -1,5 +1,4 @@
 .order-item {
-  padding: 30px;
   box-shadow: rgba(0, 0, 0, 1) 0px 25px 20px -20px;
   background: rgb(45 55 60);
   color: #fff;
@@ -24,5 +23,5 @@
 .manage-all-orders h2 {
   font-weight: 600;
   padding: 30px;
-  font-size: 60px;
+  font-size: 30px;
 }

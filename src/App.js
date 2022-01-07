@@ -8,6 +8,7 @@ import Login from './Login/Login/Login';
 import PrivateRoute from './Login/PrivateRoute/PrivateRoute';
 import AddPakage from './Pages/AddPakage/AddPakage';
 import Home from './Pages/Home/Home/Home';
+import MakeAdmin from './Pages/MakeAdmin/MakeAdmin';
 import ManageAllOrders from './Pages/ManageAllOrders/ManageAllOrders/ManageAllOrders';
 import MyOrders from './Pages/MyOrders/MyOrders';
 import NotFound from './Pages/NotFound/NotFound';
@@ -33,6 +34,9 @@ function App() {
      </PrivateRoute>
      <PrivateRoute path="/addPakage">
          <AddPakage></AddPakage>
+     </PrivateRoute>
+     <PrivateRoute path="/makeAdmin">
+         <MakeAdmin/>
      </PrivateRoute>
      <PrivateRoute path="/manageAllOrder">
          <ManageAllOrders></ManageAllOrders>

@@ -45,6 +45,7 @@ const ManageAllOrders = () => {
                     {
                         orders.map(order => <Col md={4} sm={12}>
                             <div className="order-item">
+                                <img className='w-100' src={order.pakageImage} alt="" />
                                 <h3>{order.pakageName}</h3>
                                 <h1>Price : {order.pakagePrice}$</h1>
                                 <p>{order.address}</p>

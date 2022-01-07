@@ -47,6 +47,7 @@ const PakageDetail = () => {
                         
                         <input defaultValue="pending" {...register("status",{ required: true })} />
                         <input defaultValue={singlePakage.name} {...register("pakageName" ,{ required: true })} />
+                        <input defaultValue={singlePakage.img} {...register("pakageImage" ,{ required: true })} />
                         <input defaultValue={singlePakage.price} {...register("pakagePrice" ,{ required: true })} />
                         <input defaultValue={singlePakage._id} {...register("pakageId" ,{ required: true })} />
                         <input placeholder="Phone" defaultValue="" {...register("phone",{ required: true })} />

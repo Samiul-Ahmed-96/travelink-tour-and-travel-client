@@ -13,7 +13,7 @@ const ChooseTour = () => {
 
   return (
     <Container id="chooseTour" className="choose-items-container">
-      <div className="heading-title">
+      <div className="heading-title text-center">
         <div className="title">
           <h2 className="section-heading">Choose Your Plan</h2>
           <p>

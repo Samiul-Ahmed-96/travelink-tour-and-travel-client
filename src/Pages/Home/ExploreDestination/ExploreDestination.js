@@ -49,7 +49,7 @@ const ExploreDestination = () => {
     return (
         <section className='explore-destination'>
             <Container>
-            <div className="heading-title">
+            <div className="heading-title text-center">
             <div className="title">
               <h2 className="section-heading">Explore Your Destination</h2>
               <p>

@@ -14,6 +14,7 @@ import NotFound from './Pages/NotFound/NotFound';
 import PakageDetailAndBooking from './Pages/PakageDetailAndBooking/PakageDetailAndBooking';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
+import Register from './Register/Register';
 
 function App() {
   return (
@@ -41,6 +42,9 @@ function App() {
      </PrivateRoute>
      <Route path="/login">
          <Login></Login>
+     </Route>
+     <Route path="/register">
+         <Register/>
      </Route>
      <Route path="*">
        <NotFound></NotFound>

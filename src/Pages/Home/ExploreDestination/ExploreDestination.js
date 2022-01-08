@@ -47,7 +47,7 @@ const ExploreDestination = () => {
   }, []);
 
   return (
-    <section className="explore-destination">
+    <section id="destination" className="explore-destination">
       <Container>
         <div className="heading-title text-center">
           <div className="title">

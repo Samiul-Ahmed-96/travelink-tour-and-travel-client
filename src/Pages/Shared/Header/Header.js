@@ -30,7 +30,7 @@ const Header = () => {
               ) : (
                 <div>
                   <HashLink to="/home#tourpakages">Tour Pakages</HashLink>
-                  <HashLink to="/home#chooseTour">Choose Tour</HashLink>
+                  <HashLink to="/home#destination">Destination</HashLink>
                   <HashLink to="/home#gallary">Gallary</HashLink>
                   {user.email && <Link to="/myOrders">My Pakages</Link>}
                 </div>

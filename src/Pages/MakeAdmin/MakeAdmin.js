@@ -11,7 +11,7 @@ const MakeAdmin = () => {
   };
   const makeAdmin = (e) => {
     const user = { email };
-    fetch("http://localhost:5000/users/admin", {
+    fetch("https://limitless-earth-18876.herokuapp.com/users/admin", {
       method: "PUT",
       headers: {
         "content-type": "application/json",

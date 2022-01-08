@@ -4,7 +4,7 @@ import "./Gallary.css";
 
 const Gallary = () => {
   return (
-    <section className="gallary">
+    <section id="gallary" className="gallary">
       <Container>
         <div className="heading-title text-center">
           <div className="title">

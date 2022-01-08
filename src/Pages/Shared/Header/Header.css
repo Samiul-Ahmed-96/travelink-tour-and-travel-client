@@ -27,6 +27,8 @@
   margin-left: 10px;
   width: 130px;
   font-weight: 600;
+  border-radius: 5px;
+  color: #2d373c;
 }
 .ls-btn {
   padding: 5px 15px;

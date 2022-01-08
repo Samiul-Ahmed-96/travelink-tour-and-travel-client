@@ -43,7 +43,7 @@ const MyOrders = () => {
         <Row className="my-orders-container">
           <h2>Your Bookings</h2>
           {result.map((order) => (
-            <Col md={4} sm={12} xs={12}>
+            <Col md={3} sm={12} xs={12}>
               <div className="my-orders">
                 <img className="w-100" src={order.pakageImage} alt="" />
                 <div className="order-content">

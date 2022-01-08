@@ -1,0 +1,18 @@
+form.admin-main input {
+  width: 100%;
+  display: block;
+  margin: 20px 0px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #2d373c;
+}
+form.admin-main input:last-child {
+  background: rgb(255 127 71);
+  padding: 10px;
+  width: 50%;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 5px;
+}

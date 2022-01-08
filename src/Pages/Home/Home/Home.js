@@ -12,11 +12,11 @@ const Home = () => {
     <div>
       <Banner></Banner>
       <TourPakages />
-      <Newsletter/>
+      <Newsletter />
       <ExploreDestination />
       <ChooseTour></ChooseTour>
       <Welcome></Welcome>
-      <Gallary/>
+      <Gallary />
     </div>
   );
 };

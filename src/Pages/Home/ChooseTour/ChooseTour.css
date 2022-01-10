@@ -4,13 +4,18 @@
 
 .choose-item {
   text-align: center;
-  background: #2d373cdb;
   padding: 30px;
   box-shadow: rgb(0 0 0 / 25%) 0px 30px 60px -12px inset,
     rgb(45 55 60) 0px 18px 36px -18px inset;
   border-radius: 10px;
   color: #fff;
   margin-top: 30px;
+  background: rgb(251, 125, 71);
+  background: radial-gradient(
+    circle,
+    rgba(251, 125, 71, 1) 0%,
+    rgb(45 55 60) 100%
+  );
 }
 .section-heading {
   font-size: 40px;

@@ -1,6 +1,7 @@
 import React from "react";
 import { Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import Slider from "react-slick";
 import bannerOne from "../../../Images/Banner/banner.jpg";
 import bannerThree from "../../../Images/Banner/bannerThree.jpg";
@@ -33,12 +34,12 @@ const Banner = () => {
                 train, boat, bus, airplane, ship or other means, with or without
                 luggage, and can be one way or round trip.
               </h4>
-              <Link to="/tourPakages">
+              <HashLink to="/home#tourpakages">
                 <button>View Adventure</button>
-              </Link>
-              <Link to="/tourPakages">
+              </HashLink>
+              <HashLink to="/home#tourpakages">
                 <button>Take A Tour</button>
-              </Link>
+              </HashLink>
             </div>
           </div>
           <div className="slider-main">

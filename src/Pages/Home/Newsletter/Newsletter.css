@@ -10,7 +10,9 @@
   font-size: 48px;
   font-weight: 600;
 }
-
+.newsletter-left {
+  padding: 20px;
+}
 .newsletter-left h2 span {
   color: #fc7d46;
 }
@@ -36,6 +38,7 @@
   font-size: 60px;
   margin: 10px 0px;
   color: #fb7d47;
+  transition: 0.3s;
 }
 .newsletter-right {
   padding: 30px;

@@ -92,6 +92,9 @@ const Footer = () => {
             </div>
           </Col>
         </Row>
+        <div className="author text-center my-3">
+        <p>2022 Design & Developed by Md. Samiul Ahmed </p>
+        </div>
       </Container>
     </div>
   );

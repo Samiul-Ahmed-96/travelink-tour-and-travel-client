@@ -78,12 +78,26 @@ ul.slick-dots {
   }
   img.bannerImg {
     width: 100%;
-    height: 600px;
+    height: 500px;
   }
   .navbar-nav a {
     display: block;
   }
   .navbar-nav button {
     margin-bottom: 15px;
+  }
+}
+@media screen and (min-device-width: 769px) and (max-device-width: 1388px) {
+  .banner-content {
+    height: 90vh;
+    padding: 10px;
+  }
+  .banner-content h1 {
+    font-size: 38px;
+  }
+  .banner-content h4 {
+    font-size: 18px;
+    width: 600px;
+    margin: 10 0px;
   }
 }

@@ -15,26 +15,31 @@ npm start . then you will see the project start on your browser
 ## Features
 
 
-- Booking System
-- Manage Booking
-- Component based
-- Speed faster
-- Authentication System
+- User can booking pakages
+- User can manage their booking
+- Admin are able to make another admin
+- Admin are manage all the booking
+- Admin can add new pakage
+- Register with Email and Password
+- Google Login
 
 ## Author
 
 - [https://github.com/Samiul-Ahmed-96](https://github.com/Samiul-Ahmed-96)
 
   
-## Technology
+## Tools & Technology
 - React 
 - React Bootstrap
 - React hook form 
 - React Router dom
+- Firebase
 - Express js
 - Node js
 - MongoDB
 - Css
+- Heroku
+- Netlify
 
 
 

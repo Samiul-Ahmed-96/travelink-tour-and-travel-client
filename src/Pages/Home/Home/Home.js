@@ -9,15 +9,15 @@ import Welcome from "../Welcome/Welcome";
 
 const Home = () => {
   return (
-    <div>
+    <main>
       <Banner></Banner>
       <TourPakages />
       <Newsletter />
       <ExploreDestination />
       <ChooseTour></ChooseTour>
-      <Welcome></Welcome>
+      <Welcome/>
       <Gallary />
-    </div>
+    </main>
   );
 };
 

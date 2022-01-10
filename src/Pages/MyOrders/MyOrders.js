@@ -36,7 +36,7 @@ const MyOrders = () => {
   const result = myOrders.filter((order) => order.email === user.email);
 
   return (
-    <Container>
+    <Container className="overflow-hidden">
       {result.length === 0 ? (
         <Spinner className="text-center" animation="grow" variant="warning" />
       ) : (

@@ -34,7 +34,7 @@ const ManageAllOrders = () => {
 
   return (
     <div>
-      <Container className="manage-all-orders">
+      <Container className="manage-all-orders overflow-hidden">
         <h2>All orders</h2>
         {orders.length === 0 ? (
           <Spinner className="text-center" animation="grow" variant="warning" />

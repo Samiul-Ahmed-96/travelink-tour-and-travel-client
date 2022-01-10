@@ -18,7 +18,7 @@ const Banner = () => {
     slidesToScroll: 1,
   };
   return (
-    <section className="banner">
+    <section className="banner overflow-hidden">
       <Row>
         <Slider {...settings}>
           <div className="slider-main">

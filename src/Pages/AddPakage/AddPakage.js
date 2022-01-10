@@ -23,7 +23,7 @@ const AddPakage = () => {
   return (
     <div>
       <Container>
-        <Row className="d-flex align-items-center add-pakage-container">
+        <Row className="d-flex align-items-center add-pakage-container overflow-hidden">
           <Col md={6} sm={12}>
             <img
               className="w-100"

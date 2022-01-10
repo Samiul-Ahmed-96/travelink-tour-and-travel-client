@@ -14,7 +14,7 @@ const TourPakages = () => {
   }, []);
 
   return (
-    <Container id="tourpakages">
+    <Container id="tourpakages" className="tourPakages overflow-hidden">
       {pakages.length === 0 ? (
         <Spinner className="text-center" animation="grow" variant="warning" />
       ) : (

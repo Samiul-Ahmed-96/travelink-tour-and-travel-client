@@ -12,7 +12,7 @@ const ChooseTour = () => {
   }, []);
 
   return (
-    <Container id="chooseTour" className="choose-items-container">
+    <Container id="chooseTour" className="choose-items-container overflow-hidden">
       <div className="heading-title text-center">
         <div className="title">
           <h2 className="section-heading">Choose Your Plan</h2>

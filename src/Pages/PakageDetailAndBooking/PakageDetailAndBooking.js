@@ -41,7 +41,7 @@ const PakageDetail = () => {
   };
   return (
     <Container>
-      <Row className="booking-from">
+      <Row className="booking-from overflow-hidden">
         <Col md={6} sm={12} xs={12}>
           <div className="pakage-details my-4">
             <img className="w-100" src={singlePakage.img} alt="" />
